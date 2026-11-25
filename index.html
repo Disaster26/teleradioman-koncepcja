@@ -38,15 +38,15 @@ button{font:inherit;cursor:pointer}
 /* naglowek */
 .naglowek{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia)}
 .naglowek__w{max-width:var(--w);margin:0 auto;padding:0 16px;height:60px;display:flex;align-items:center;gap:14px}
-.naglowek__logo{display:block;margin-right:auto}
+.naglowek__logo{display:block;margin-right:auto;min-width:0}
 .logo{display:block;width:172px;height:auto}
 .menu ul{list-style:none;margin:0;padding:0}
 .menu a{text-decoration:none;font-weight:600}
 .naglowek__tel{font-weight:700;text-decoration:none;white-space:nowrap;font-size:.95rem}
-.naglowek__kosz{position:relative;display:flex;width:36px;height:36px;align-items:center;justify-content:center;color:var(--grafit)}
+.naglowek__kosz{flex:none;position:relative;display:flex;width:36px;height:36px;align-items:center;justify-content:center;color:var(--grafit)}
 .naglowek__kosz svg{width:24px;height:24px}
 .kosz__licznik{position:absolute;top:0;right:-2px;min-width:18px;height:18px;padding:0 4px;border-radius:9px;background:var(--czerwien);color:#fff;font-size:.7rem;font-weight:700;line-height:18px;text-align:center}
-.burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;padding:8px;border:0;background:none}
+.burger{flex:none;display:flex;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;padding:8px;border:0;background:none}
 .burger span{display:block;height:2px;background:var(--grafit);transition:transform .2s,opacity .2s}
 .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
