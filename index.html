@@ -38,7 +38,7 @@ button{font:inherit;cursor:pointer}
 /* naglowek */
 .naglowek{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia)}
 .naglowek__w{max-width:var(--w);margin:0 auto;padding:0 16px;height:60px;display:flex;align-items:center;gap:14px}
-.naglowek__logo{display:block;margin-right:auto;min-width:0}
+.naglowek__logo{display:block;margin-right:auto}
 .logo{display:block;width:172px;height:auto}
 .menu ul{list-style:none;margin:0;padding:0}
 .menu a{text-decoration:none;font-weight:600}
@@ -58,8 +58,11 @@ button{font:inherit;cursor:pointer}
  .menu a{display:block;padding:16px 0;font-size:1.2rem}
  .menu a[aria-current]{color:var(--czerwien)}
  .naglowek__tel{font-size:.9rem}
+ .menu .menu__tel{border:0;margin-top:16px}
+ .menu .menu__tel a{background:var(--czerwien);color:#fff;text-align:center;border-radius:3px;font-weight:700}
 }
-@media (max-width:370px){.logo{width:140px}.naglowek__w{gap:8px}}
+@media (min-width:900px){.menu__tel{display:none}}
+@media (max-width:419px){.naglowek__tel{display:none}}
 @media (min-width:900px){
  .naglowek__w{height:72px;gap:28px}
  .logo{width:220px}
@@ -265,6 +268,7 @@ button{font:inherit;cursor:pointer}
         <li><a href="https://allegro.pl/uzytkownik/alizze">Allegro</a></li>
         <li><a href="https://www.facebook.com/TeleRadiomanKrakow/photos/">Realizacje</a></li>
         <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li class="menu__tel"><a href="tel:+48124119624">Zadzwoń: 12 411 96 24</a></li>
       </ul>
     </nav>
     <a class="naglowek__tel" href="tel:+48124119624"><span class="ukryj-m">tel. </span>12 411 96 24</a>
